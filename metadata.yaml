@@ -1,0 +1,10 @@
+name: astrbot_plugin_group_config
+display_name: 分组配置管家
+short_desc: 分组批量管理配置，人格源四层生效
+desc: 分组批量管理人格、模型与插件开关，并增加「人格源」：被勾选的人格成为决定性人格，主动消息、动态生活状态等插件生成时也使用它；全局、分组、整群、子会话四层可分别勾选，随继承生效。
+version: v1.0.0
+author: workspace
+astrbot_version: ">=4.5,<5"
+pages:
+  - name: console
+    title: 分组配置管理

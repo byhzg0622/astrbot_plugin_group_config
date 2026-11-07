@@ -1,0 +1,8 @@
+{
+  "session_plugin_gate": {
+    "description": "会话级插件闸门（调用瞬间拦截，按群/会话禁用插件）",
+    "type": "bool",
+    "default": false,
+    "hint": "开启后：在某会话（群）里被禁用的插件，其 handler 与 LLM 工具在被调用的那一刻直接跳过——覆盖 消息/指令、全部钩子（on_llm_request 等）、结果装饰、LLM 工具 四条路径，且只过滤、不改任何参数。规则与核心自定义规则同源（session_plugin_config），你在分组配置里 off 掉哪个插件就拦哪个。关闭即完全还原为 AstrBot 原生行为。变更后重载本插件生效。"
+  }
+}
